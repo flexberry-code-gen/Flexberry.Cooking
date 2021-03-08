@@ -1,0 +1,36 @@
+﻿{
+  "applicationCaption": "Cooking",
+  "applicationTitle": "Cooking",
+  "items": [
+    {
+      "link": null,
+      "menuName": "cooking",
+      "caption": "Cooking",
+      "title": "Cooking",
+      "children": [
+        {
+          "link": "i-i-s-cooking-ingredient-l",
+          "menuName": null,
+          "caption": "Ingredient",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-cooking-recipe-l",
+          "menuName": null,
+          "caption": "Recipe",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-cooking-person-l",
+          "menuName": null,
+          "caption": "Person",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

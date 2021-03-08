@@ -1,0 +1,77 @@
+﻿{
+  "name": "IISCookingProduct",
+  "modelName": "i-i-s-cooking-product",
+  "className": "Product",
+  "nameSpace": "IIS.Cooking",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "weight",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "ingredient",
+      "relatedTo": "i-i-s-cooking-ingredient",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "recipe",
+      "relatedTo": "i-i-s-cooking-recipe",
+      "inverse": "product"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ProductE",
+      "modelName": "i-i-s-cooking-product",
+      "attrs": [
+        {
+          "name": "weight",
+          "caption": "Weight",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Ingredient",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Ingredient",
+          "name": "ingredient",
+          "relatedTo": "i-i-s-cooking-ingredient",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-cooking-recipe-e",
+  "editForm": "i-i-s-cooking-recipe-e",
+  "external": false,
+  "caption": "Recipe",
+  "name": "IISCookingRecipeL",
+  "className": "RecipeL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-cooking-recipe",
+      "modelProjection": "RecipeL"
+    }
+  ]
+}

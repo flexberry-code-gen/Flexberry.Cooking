@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Person",
+      "projection": "PersonL",
+      "detailModelName": null
+    },
+    {
+      "master": "ingredient",
+      "displayAttributeName": "name",
+      "required": true,
+      "relationName": "Product.Ingredient",
+      "projection": "IngredientL",
+      "detailModelName": "i-i-s-cooking-product"
+    }
+  ],
+  "external": false,
+  "caption": "Recipe",
+  "name": "IISCookingRecipeE",
+  "className": "RecipeE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-cooking-recipe",
+      "modelProjection": "RecipeE"
+    }
+  ]
+}

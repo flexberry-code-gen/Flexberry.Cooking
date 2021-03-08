@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Person",
+  "name": "IISCookingPersonE",
+  "className": "PersonE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-cooking-person",
+      "modelProjection": "PersonE"
+    }
+  ]
+}

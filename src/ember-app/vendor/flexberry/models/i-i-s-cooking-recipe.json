@@ -1,0 +1,120 @@
+﻿{
+  "name": "IISCookingRecipe",
+  "modelName": "i-i-s-cooking-recipe",
+  "className": "Recipe",
+  "nameSpace": "IIS.Cooking",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "description",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "person",
+      "relatedTo": "i-i-s-cooking-person",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "product",
+      "relatedTo": "i-i-s-cooking-product",
+      "inverse": "recipe"
+    }
+  ],
+  "projections": [
+    {
+      "name": "RecipeE",
+      "modelName": "i-i-s-cooking-recipe",
+      "attrs": [
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Person",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "default",
+          "caption": "Person",
+          "name": "person",
+          "relatedTo": "i-i-s-cooking-person",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ProductE",
+          "caption": "Product",
+          "name": "product",
+          "relatedTo": "i-i-s-cooking-product",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "RecipeL",
+      "modelName": "i-i-s-cooking-recipe",
+      "attrs": [
+        {
+          "name": "description",
+          "caption": "Description",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Person",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Name",
+          "name": "person",
+          "relatedTo": "i-i-s-cooking-person",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

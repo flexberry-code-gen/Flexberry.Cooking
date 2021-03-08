@@ -1,0 +1,1 @@
+docker-compose -p cooking up -d

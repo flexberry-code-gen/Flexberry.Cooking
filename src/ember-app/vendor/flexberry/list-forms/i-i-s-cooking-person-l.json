@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-cooking-person-e",
+  "editForm": "i-i-s-cooking-person-e",
+  "external": false,
+  "caption": "Person",
+  "name": "IISCookingPersonL",
+  "className": "PersonL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-cooking-person",
+      "modelProjection": "PersonL"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Ingredient",
+  "name": "IISCookingIngredientE",
+  "className": "IngredientE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-cooking-ingredient",
+      "modelProjection": "IngredientE"
+    }
+  ]
+}
